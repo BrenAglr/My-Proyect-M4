@@ -1,6 +1,9 @@
 'use client';
 
+// react
 import React from "react";
+
+// interfaces
 import { IProduct } from "@/interfaces/types";
 
 interface CartOrderProps {

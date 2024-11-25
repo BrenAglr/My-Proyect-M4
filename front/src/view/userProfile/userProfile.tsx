@@ -12,8 +12,11 @@ import { useRouter } from "next/navigation";
 // sweetalert
 import Swal from "sweetalert2";
 
+// interfaces
 import { IUserData } from "@/interfaces/types";
-import OrderList from "@/components/OrderList/orderList";
+
+// components
+import OrderList from "@/components/OrderList";
 
 const UserProfile: React.FC = () => {
   const router = useRouter();

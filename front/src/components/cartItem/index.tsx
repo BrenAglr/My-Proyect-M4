@@ -1,7 +1,10 @@
 "use client"
 
-import { IProduct } from "@/interfaces/types"
+// react
 import React from "react"
+
+// interfaces
+import { IProduct } from "@/interfaces/types"
 
 export const CartItem: React.FC<IProduct & { onDelete: () => void }> = ({ image, name, price, onDelete }) => {
     return (

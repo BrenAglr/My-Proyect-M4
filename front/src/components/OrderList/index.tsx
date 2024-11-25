@@ -1,10 +1,19 @@
 "use client";
 
-import { getOrders } from "@/api/orderAPI";
-import { IUserOrder } from "@/interfaces/types";
+// react
 import React, { useEffect, useState } from "react";
-import Swal from "sweetalert2";
+
+// components
 import OrderCard from "../orderCard";
+
+// interfaces
+import { IUserOrder } from "@/interfaces/types";
+
+// api
+import { getOrders } from "@/api/orderAPI";
+
+// sweet alert
+import Swal from "sweetalert2";
 
 interface IOrderListProps {
   userToken: string;

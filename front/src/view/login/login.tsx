@@ -6,8 +6,10 @@ import { useEffect, useState } from "react";
 
 //helpers
 import { validateLogin } from "../../helpers/validateLogin"
-import { login } from "@/api/authAPI";
 import Toast from "@/helpers/swal.helper";
+
+// api
+import { login } from "@/api/authAPI";
 
 //interface
 import { ILoginProps } from "@/interfaces/types";
@@ -15,9 +17,10 @@ import { IErrorsProps } from "@/interfaces/types";
 
 // next
 import { useRouter } from "next/navigation";
-
-import  Cookies from "js-cookie";
 import Link from "next/link";
+
+// cookies
+import  Cookies from "js-cookie";
 
 export const Login: React.FC = () => {
     const router = useRouter()

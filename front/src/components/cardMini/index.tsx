@@ -1,3 +1,7 @@
+// react
+import React from "react";
+
+// interfaces
 import { IProduct } from "@/interfaces/types";
 
 export const CardMini: React.FC<IProduct> = ({ name, price, image }) => {

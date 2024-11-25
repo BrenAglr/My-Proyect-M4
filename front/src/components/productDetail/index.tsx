@@ -2,8 +2,9 @@
 import React from 'react';
 
 // Interface
-import { IProduct } from "@/interfaces/types"; // Asegúrate de tener esta interfaz definida
+import { IProduct } from "@/interfaces/types"; 
 
+// components
 import CardList from '../cardList';
 import AddToCart from '../addToCart';
 
@@ -17,7 +18,7 @@ const ProductDetail: React.FC<IProduct> = (product) => {
                         <img
                             src={product.image}
                             alt="product image"
-                            className="w-full h-64 object-contain rounded-lg" // Cambié w-64 a w-full y añadí object-contain
+                            className="w-full h-64 object-contain rounded-lg" 
                         />
                     </div>
 

@@ -1,8 +1,14 @@
+// react
+import React from "react";
 
 // interfaces
 import { IProduct } from "@/interfaces/types"
-import AddToCart from "../addToCart";
+
+// next
 import Link from "next/link";
+
+// components
+import AddToCart from "../addToCart";
 
 export const CardHome: React.FC<IProduct> = (product) => {
     const limitedDescription = product.description.length > 60 

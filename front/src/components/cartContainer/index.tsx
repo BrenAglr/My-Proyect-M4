@@ -1,13 +1,26 @@
 "use client"
 
-import { IProduct, IUserData } from "@/interfaces/types";
+// react
 import React, { useEffect, useState } from "react";
+
+// interfaces
+import { IProduct, IUserData } from "@/interfaces/types";
+
+// components
 import CartList from "../cartList";
 import CartOrder from "../cartOrder";
+
+// cookies
 import Cookies from "js-cookie";
-import { createOrder } from "@/api/orderAPI";
-import Toast from "@/helpers/swal.helper";
+
+// next
 import { useRouter } from "next/navigation";
+
+// helpers
+import Toast from "@/helpers/swal.helper";
+
+// api
+import { createOrder } from "@/api/orderAPI";
 
 export const CartContainer: React.FC = () => {
     const router = useRouter()

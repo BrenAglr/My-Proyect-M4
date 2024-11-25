@@ -1,5 +1,8 @@
-import { IProduct, IUserOrder } from "@/interfaces/types";
+// react
 import React from "react"
+
+// interfaces
+import { IUserOrder } from "@/interfaces/types";
 
 interface IOrderCardProps {
     order: IUserOrder

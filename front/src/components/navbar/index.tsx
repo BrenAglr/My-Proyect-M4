@@ -28,8 +28,6 @@ export const Navbar: React.FC = () => {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // const [userData, setUserData] = useState("");
-
   useEffect(() => {
     const token = Cookies.get("userData");
 
@@ -78,7 +76,6 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Right Section - Search and Cart / Login and Register buttons */}
-
         {!isLoggedIn ? (
             <div className="flex items-center space-x-4 mt-4">
               <Link href="/login">

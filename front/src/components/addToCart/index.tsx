@@ -1,11 +1,21 @@
 "use client"
+// react
+import React, { useEffect, useState } from "react";
 
+// interfaces
 import { IProduct, IUserData } from "@/interfaces/types"
+
+// next
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+
+// cookies
 import Cookies from "js-cookie";
-import Swal from "sweetalert2";
+
+// helpers
 import Toast from "@/helpers/swal.helper";
+
+// sweet alert
+import Swal from "sweetalert2";
 
 interface IAddToCartProps {
     product: IProduct;
@@ -55,7 +65,6 @@ export const AddToCart: React.FC<IAddToCartProps> = ({product}) => {
             if (result.isConfirmed) {
               router.push("/login")
             } else if (
-              /* Read more about handling dismissals below */
               result.dismiss === Swal.DismissReason.cancel
             ) {
               router.push("/register")

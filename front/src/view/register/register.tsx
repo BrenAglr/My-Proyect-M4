@@ -10,7 +10,11 @@ import Toast from "@/helpers/swal.helper";
 
 //interfaces
 import { IErrorsProps, IRegisterProps } from "@/interfaces/types";
+
+// api
 import { register } from "@/api/authAPI";
+
+// next
 import { useRouter } from "next/navigation";
 
 export const Register: React.FC = () => {
