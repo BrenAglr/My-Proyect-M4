@@ -4,7 +4,7 @@ import { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
-    if ((pathname === "/cart") && !request.cookies.get("userData")?.value) {
+    if ((pathname === "/shopping") && !request.cookies.get("userData")?.value) {
 
         const loginURL = new URL("/login", request.nextUrl.origin);
         return NextResponse.redirect(loginURL);

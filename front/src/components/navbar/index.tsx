@@ -62,10 +62,12 @@ export const Navbar: React.FC = () => {
           <Link href="/">
             <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2">Home</div>
           </Link>
+          
+            <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2 cursor-pointer">Contact</div>
+          
           <Link href="/about">
             <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2">About Us</div>
           </Link>
-            <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2 cursor-pointer">Contact</div>
         </div>
 
         {/* Center Section - Logo */}
@@ -106,9 +108,9 @@ export const Navbar: React.FC = () => {
           <Link href="/">
             <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2">Home</div>
           </Link>
-          <Link href="/shopping">
-            <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2">Shopping</div>
-          </Link>
+
+            <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2">Contact</div>
+      
           <Link href="/about">
             <div className="text-janna hover:bg-janna hover:text-bondiblue rounded-lg p-2">About Us</div>
           </Link>

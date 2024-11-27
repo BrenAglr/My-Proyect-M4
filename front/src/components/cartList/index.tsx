@@ -16,7 +16,7 @@ interface CartListProps {
 
 export const CartList: React.FC<CartListProps> = ({ products, onDelete }) => {
   return (
-    <div className="md:col-span-2 bg-sky-100 shadow-md rounded-lg p-6 w-3/4">
+    <div className="bg-sky-100 shadow-md rounded-lg p-6 w-full md:w-3/4 mx-auto">
       <h2 className="text-xl font-semibold text-gray-800 mb-4">Your products</h2>
       <div className="space-y-4">
         {products.length > 0 ? (
